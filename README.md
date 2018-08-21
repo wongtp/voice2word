@@ -1,7 +1,8 @@
 # voice2word
 
 图片显示不出来，没有自己的服务器，也不知道上传到哪里，所以，gu men na sai！！！抱歉
-真的要看图片的话，麻烦![转去博客](https://blog.csdn.net/ocp114/article/details/81912366)咯
+真的要看图片的话，麻烦[转去博客](https://blog.csdn.net/ocp114/article/details/81912366)咯[源码地址]
+
 一、这是啥？
 
  1. 一个 PC 版语音转文字的工具

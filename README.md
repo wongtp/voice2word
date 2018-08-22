@@ -25,4 +25,4 @@
 	
 [源码地址](https://github.com/wongtp/voice2word)
 
-[编译后的 exe 文件地址](https://download.csdn.net/download/ocp114/10618324)
+[编译后的 exe 文件地址](https://download.csdn.net/download/ocp114/10619390)

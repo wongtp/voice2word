@@ -54,7 +54,7 @@ public class MainView extends JFrame implements ActionListener {
 	}
 	
 	/**
-	 * 界面初始化.
+	 * 界面初始化
 	 */
 	public MainView() {
 		setSize(45, 45);

@@ -49,9 +49,10 @@ public class MainView extends JFrame implements ActionListener {
 	//执行录音操作的对象
 	private Recoder recoder = new Recoder();
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		mJframe = new MainView();
 	}
+	
 	
 	/**
 	 * 界面初始化

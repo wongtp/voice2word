@@ -42,15 +42,6 @@ public class Recoder {
 		mIat.stopListening();
 	}
 	
-	public static void main(String[] args) {
-		StringBuffer sb = new StringBuffer();
-		sb.append("asdf");
-		sb.append("asdf");
-		sb.append("。");
-		String lastChar = sb.substring(sb.length() - 1);
-		System.out.println(lastChar);
-	}
-	
 	/**
 	 * 听写监听器
 	 */
@@ -120,7 +111,7 @@ public class Recoder {
 		mIat.setParameter(SpeechConstant.KEY_SPEECH_TIMEOUT, ConfigUtil.getProperty("KEY_SPEECH_TIMEOUT", "60000"));//设置录取音频的最长时间，[0, 60000]，默认值：60000
 //		mIat.setParameter(SpeechConstant.DOMAIN, "iat");//应用领域用于听写和语音语义服务，{ "iat"（短信和日常用语）, "video", "poi"（地图）, "music" }，默认值："iat"
 		mIat.setParameter(SpeechConstant.VAD_BOS, ConfigUtil.getProperty("VAD_BOS", "10000"));//开始录入音频后，音频前面部分最长静音时长，[1000, 10000]， 默认值：5000
-		mIat.setParameter(SpeechConstant.LANGUAGE, ConfigUtil.getProperty("LANGUAGE", "zh_cn"));//语言，{ "zh_cn", "en_us" }， 默认值："zh_cn"
+//		mIat.setParameter(SpeechConstant.LANGUAGE, ConfigUtil.getProperty("LANGUAGE", "zh_cn"));//语言，{ "zh_cn", "en_us" }， 默认值："zh_cn"
 		mIat.setParameter(SpeechConstant.ACCENT, ConfigUtil.getProperty("ACCENT", "mandarin"));//语言区域 默认 mandarin：普通话 | cantonese：粤语 | lmz：四川话 | henanese：河南话
 		mIat.setParameter(SpeechConstant.VAD_EOS, ConfigUtil.getProperty("VAD_EOS", "300"));//后端点超时，开始录入音频后，音频后面部分最长静音时长，[0, 10000]， 默认值：1800
 		mIat.setParameter(SpeechConstant.SAMPLE_RATE, ConfigUtil.getProperty("SAMPLE_RATE", "16000"));//识别采样率，{8000，16000}， 默认值：16000

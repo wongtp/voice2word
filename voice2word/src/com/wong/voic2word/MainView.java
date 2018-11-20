@@ -53,7 +53,6 @@ public class MainView extends JFrame implements ActionListener {
 		mJframe = new MainView();
 	}
 	
-	
 	/**
 	 * 界面初始化
 	 */
@@ -178,7 +177,7 @@ public class MainView extends JFrame implements ActionListener {
 					tray.remove(trayIcon);
 					System.exit(0);
 				}
-			});//addActionListener
+			});
 			popupMenu.add(exit);
 			
 			tray = SystemTray.getSystemTray();//通过静态方法得到系统托盘
@@ -188,7 +187,6 @@ public class MainView extends JFrame implements ActionListener {
 				//将托盘图标设置到系统托盘中
 				tray.add(trayIcon);
 			} catch (AWTException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			//为托盘图标注册监听器
